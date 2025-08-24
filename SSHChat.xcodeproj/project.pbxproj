@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1858F5435DAF9305814F0292 /* Models.Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43A81494896E50901826E60 /* Models.Message.swift */; };
+		20225D6725832B5E33D832A2 /* Views.InputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FD2966F45160D3F9AF275 /* Views.InputBar.swift */; };
+		278267C0EB727663987104F3 /* ssh_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC044E668AACA571A1018A04 /* ssh_chatApp.swift */; };
+		4832CAA0150CECF458966D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CDBC93132B285ECA97158E3 /* Assets.xcassets */; };
+		604B556FE597621857CB97E4 /* NIOSSH in Frameworks */ = {isa = PBXBuildFile; productRef = B245092BF3D02215B8999CDE /* NIOSSH */; };
+		615BF7005306211CD12556DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD527F8417CFF8CB8A9723FD /* README.md */; };
+		64ED80FD63267294199E767C /* Views.ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB35AFED787EA49C4544F2 /* Views.ChatView.swift */; };
+		91CA48BDFCAB686D6771FB94 /* Store.MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D6ED0DDDC94C96735944C /* Store.MessageStore.swift */; };
+		96EC66C6F623415CFD2D8E1D /* Speech.SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2EC2E8312141D0C0A11BE9 /* Speech.SpeechRecognizer.swift */; };
+		9996DD63FE8CB7193177B88A /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = 2B2891C8DCEBD1166D6EF727 /* NIOTransportServices */; };
+		C53CBD3C166B771EF784EA00 /* Theme.Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE55F11E746F17A2654E576 /* Theme.Theme.swift */; };
+		CB668902DBCB1A299A256039 /* SSH.SSHClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC897C5D33B3DAF13BE514F9 /* SSH.SSHClient.swift */; };
+		DE7CA2AD65FDE8F3DF5B7281 /* Views.ConnectionSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E27D790560CE4DF2743EA7C /* Views.ConnectionSetupView.swift */; };
+		E8AAAB00959DFF0CEA6007A9 /* Views.MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22A09BB272162E0F313DA /* Views.MessageRowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E27D790560CE4DF2743EA7C /* Views.ConnectionSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.ConnectionSetupView.swift; sourceTree = "<group>"; };
+		20C22A09BB272162E0F313DA /* Views.MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.MessageRowView.swift; sourceTree = "<group>"; };
+		2DEB35AFED787EA49C4544F2 /* Views.ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.ChatView.swift; sourceTree = "<group>"; };
+		6CDBC93132B285ECA97158E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B2EC2E8312141D0C0A11BE9 /* Speech.SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speech.SpeechRecognizer.swift; sourceTree = "<group>"; };
+		CD527F8417CFF8CB8A9723FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D37C08A205C190F1E87758CD /* SSHChat.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SSHChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D43A81494896E50901826E60 /* Models.Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.Message.swift; sourceTree = "<group>"; };
+		EC044E668AACA571A1018A04 /* ssh_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssh_chatApp.swift; sourceTree = "<group>"; };
+		EF9FD2966F45160D3F9AF275 /* Views.InputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.InputBar.swift; sourceTree = "<group>"; };
+		FC7D6ED0DDDC94C96735944C /* Store.MessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.MessageStore.swift; sourceTree = "<group>"; };
+		FC897C5D33B3DAF13BE514F9 /* SSH.SSHClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSH.SSHClient.swift; sourceTree = "<group>"; };
+		FEE55F11E746F17A2654E576 /* Theme.Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.Theme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA6BDC3AE2DD2F86D88F972D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604B556FE597621857CB97E4 /* NIOSSH in Frameworks */,
+				9996DD63FE8CB7193177B88A /* NIOTransportServices in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F6B2754CE2EE4855076BDC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D37C08A205C190F1E87758CD /* SSHChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B9FCD07A3F9AFED7DBCA04 = {
+			isa = PBXGroup;
+			children = (
+				3FA2B6723FFF75242C15023E /* ssh-chat */,
+				1F6B2754CE2EE4855076BDC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FA2B6723FFF75242C15023E /* ssh-chat */ = {
+			isa = PBXGroup;
+			children = (
+				6CDBC93132B285ECA97158E3 /* Assets.xcassets */,
+				D43A81494896E50901826E60 /* Models.Message.swift */,
+				CD527F8417CFF8CB8A9723FD /* README.md */,
+				9B2EC2E8312141D0C0A11BE9 /* Speech.SpeechRecognizer.swift */,
+				EC044E668AACA571A1018A04 /* ssh_chatApp.swift */,
+				FC897C5D33B3DAF13BE514F9 /* SSH.SSHClient.swift */,
+				FC7D6ED0DDDC94C96735944C /* Store.MessageStore.swift */,
+				FEE55F11E746F17A2654E576 /* Theme.Theme.swift */,
+				2DEB35AFED787EA49C4544F2 /* Views.ChatView.swift */,
+				1E27D790560CE4DF2743EA7C /* Views.ConnectionSetupView.swift */,
+				EF9FD2966F45160D3F9AF275 /* Views.InputBar.swift */,
+				20C22A09BB272162E0F313DA /* Views.MessageRowView.swift */,
+			);
+			path = "ssh-chat";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739AF9DBED3E5B04161507A4 /* SSHChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D7931177CD08439E9D9F95 /* Build configuration list for PBXNativeTarget "SSHChat" */;
+			buildPhases = (
+				F66A2A08AE1C5A15859D2504 /* Sources */,
+				4CC2161C76DF3DEA78C588CE /* Resources */,
+				DA6BDC3AE2DD2F86D88F972D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSHChat;
+			packageProductDependencies = (
+				B245092BF3D02215B8999CDE /* NIOSSH */,
+				2B2891C8DCEBD1166D6EF727 /* NIOTransportServices */,
+			);
+			productName = SSHChat;
+			productReference = D37C08A205C190F1E87758CD /* SSHChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5E891BD94C53CB69E01F61F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					739AF9DBED3E5B04161507A4 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 5E5AC03C680BAC2B88C2E1E7 /* Build configuration list for PBXProject "SSHChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 22B9FCD07A3F9AFED7DBCA04;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E8C66465966E26170638AEF7 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */,
+				967BD105DAD9F84B9D20529A /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739AF9DBED3E5B04161507A4 /* SSHChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC2161C76DF3DEA78C588CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4832CAA0150CECF458966D11 /* Assets.xcassets in Resources */,
+				615BF7005306211CD12556DF /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F66A2A08AE1C5A15859D2504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1858F5435DAF9305814F0292 /* Models.Message.swift in Sources */,
+				CB668902DBCB1A299A256039 /* SSH.SSHClient.swift in Sources */,
+				96EC66C6F623415CFD2D8E1D /* Speech.SpeechRecognizer.swift in Sources */,
+				91CA48BDFCAB686D6771FB94 /* Store.MessageStore.swift in Sources */,
+				C53CBD3C166B771EF784EA00 /* Theme.Theme.swift in Sources */,
+				64ED80FD63267294199E767C /* Views.ChatView.swift in Sources */,
+				DE7CA2AD65FDE8F3DF5B7281 /* Views.ConnectionSetupView.swift in Sources */,
+				20225D6725832B5E33D832A2 /* Views.InputBar.swift in Sources */,
+				E8AAAB00959DFF0CEA6007A9 /* Views.MessageRowView.swift in Sources */,
+				278267C0EB727663987104F3 /* ssh_chatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B3239D7280D8DFCC5918058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "ssh-chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sam.SSHChat;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92BFA3B4CA2940E51951DBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "ssh-chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sam.SSHChat;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC28ABF293C828BE6D92EE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB35A70AC4B86788440F8FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E5AC03C680BAC2B88C2E1E7 /* Build configuration list for PBXProject "SSHChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC28ABF293C828BE6D92EE6C /* Debug */,
+				DB35A70AC4B86788440F8FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77D7931177CD08439E9D9F95 /* Build configuration list for PBXNativeTarget "SSHChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BFA3B4CA2940E51951DBF1 /* Debug */,
+				0B3239D7280D8DFCC5918058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		967BD105DAD9F84B9D20529A /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-transport-services.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.0;
+			};
+		};
+		E8C66465966E26170638AEF7 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-ssh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B2891C8DCEBD1166D6EF727 /* NIOTransportServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967BD105DAD9F84B9D20529A /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			productName = NIOTransportServices;
+		};
+		B245092BF3D02215B8999CDE /* NIOSSH */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8C66465966E26170638AEF7 /* XCRemoteSwiftPackageReference "swift-nio-ssh" */;
+			productName = NIOSSH;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B5E891BD94C53CB69E01F61F /* Project object */;
+}

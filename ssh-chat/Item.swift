@@ -1,18 +1,7 @@
-//
-//  Item.swift
-//  ssh-chat
-//
-//  Created by Samuel Atagana on 8/22/25.
-//
-
 import Foundation
-import SwiftData
 
-@Model
-final class Item {
-    var timestamp: Date
-    
-    init(timestamp: Date) {
-        self.timestamp = timestamp
-    }
+// Placeholder data type to avoid SwiftData dependency if this file remains in the target.
+struct Item: Identifiable, Hashable {
+    var id = UUID()
+    var timestamp: Date = Date()
 }

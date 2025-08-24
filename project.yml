@@ -1,0 +1,39 @@
+name: SSHChat
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    iOS: "18.0"
+packages:
+  swift-nio-ssh:
+    url: https://github.com/apple/swift-nio-ssh.git
+    from: 0.4.0
+  swift-nio-transport-services:
+    url: https://github.com/apple/swift-nio-transport-services.git
+    from: 1.20.0
+targets:
+  SSHChat:
+    type: application
+    platform: iOS
+    deploymentTarget: "18.0"
+    dependencies:
+      - package: swift-nio-ssh
+        product: NIOSSH
+      - package: swift-nio-transport-services
+        product: NIOTransportServices
+    sources:
+      - path: ssh-chat
+        excludes:
+          - ContentView.swift
+          - Item.swift
+          - Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sam.SSHChat
+        INFOPLIST_FILE: ssh-chat/Info.plist
+        SWIFT_VERSION: 5.0
+        IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        DEVELOPMENT_TEAM: ""
+    scheme:
+      testTargets: []
+      gatherCoverageData: false

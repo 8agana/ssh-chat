@@ -1,61 +1,21 @@
-//
-//  ContentView.swift
-//  ssh-chat
-//
-//  Created by Samuel Atagana on 8/22/25.
-//
-
 import SwiftUI
-import SwiftData
 
+// Placeholder to avoid build issues if this template file is still in the target.
+// The real app entry is in SSHChatApp.
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+        VStack(spacing: 12) {
+            Text("ssh-chat mockup")
+                .font(.system(.headline, design: .monospaced))
+            Text("This is a template placeholder. The real UI starts in SSHChatApp → ConnectionSetupView/ChatView.")
+                .font(.system(.footnote, design: .monospaced))
+                .multilineTextAlignment(.center)
+                .foregroundStyle(.secondary)
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+        .padding()
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
